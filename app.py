@@ -23,7 +23,7 @@ def hello():
     print('Consumer 1 esperando mensajes. Para salir, presiona CTRL+C')
     channel.start_consuming()
 
-    return f"Hello, fucking world!\nVersion: 1.0.0\nHostname: {host} and {os.environ['RABBITMQ_HOST']}and {received_messages} \n"
+    return f"Hello, consumer fucking world!\nVersion: 1.0.0\nHostname: {host} and {os.environ['RABBITMQ_HOST']}and {received_messages} \n"
 
 if __name__ == '__main__':
     port = os.environ.get('PORT', '8081')
