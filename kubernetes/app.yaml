@@ -21,7 +21,7 @@ metadata:
   labels:
     app: consumer-app
   name: consumer-app
-  namespace: default
+  namespace: microservicios-distribuidas
 spec:
   replicas: 1
   selector:
@@ -38,7 +38,7 @@ spec:
         app: consumer-app
     spec:
       containers:
-        - image: gcr.io/hazel-champion-399821/github.com/jescobar2/demo-test
+        - image: gcr.io/hazel-champion-399821/github.com/jescobar2/consumer
           imagePullPolicy: IfNotPresent
           name: consumer-app
           resources:
