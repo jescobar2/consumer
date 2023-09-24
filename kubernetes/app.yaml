@@ -54,6 +54,9 @@ spec:
             capabilities:
               drop:
                 - NET_RAW
+          env:
+            - name: RABBITMQ_HOST
+              value: rabbitmq-service
       securityContext:
         seccompProfile:
           type: RuntimeDefault
